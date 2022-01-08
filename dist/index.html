@@ -10,8 +10,8 @@
 <body>
     <header class="header">
     <div class="container">
-        <nav class="header__menu">
-            <ul class="header__item title_fz20">
+        <nav class="header__menu ">
+            <ul class="header__item ">
                 <li class="header__logo">
                     <a href="#" class="header__logo-link">
                         <span>HURMA</span> CROCHET
@@ -39,13 +39,18 @@
                     </ul>
                 </li>
                 <li class="header__list">
-                    <a class="header__list-link" href="#">Контакты</a>
+                    <a class="header__list-link" href="#">Отзывы</a>
                 </li>
                 <li class="header__list">
                     <a class="header__list-link" href="#">Доставка</a>
                 </li> 
             </ul>
         </nav>
+        <div class="header__hamberger ">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
     </div>
     
 </header>
@@ -110,13 +115,13 @@
         <div class="title_fz36 delivery__title">Условия доставки</div>
         <div class="title delivery__wrap">
             <div class="delivery__item">
-                <h3 class="delivery__item-text">Срок изготовления заказа</h3>
+                <h3 class="delivery__item-text title_fz26">Срок изготовления заказа</h3>
                 <div class="delivery__item-descr title_fz22">
                     Все изделия мы выполняем вручную по индивидуальному заказу. На изготовление изделия после предоплаты необходимо 7-10 дней. Доставка в этот срок не входит, а рассчитывается для вас индивидуально. Подробнее про сроки и стоимость доставки вы можете прочитать ниже.
                 </div>
             </div>
             <div class="delivery__item">
-                <h3 class="delivery__item-text">Доставка</h3>
+                <h3 class="delivery__item-text title_fz26">Доставка</h3>
                 <ol class="delivery__item-descr title_fz22">
                     <li>Осуществляем доставку по городу Бресту самостоятельно или курьером. Также возможен самовывоз. Время оговаривается заранее.</li>
                     <li>В другие города Беларуси отправляем Белпочтой и Европочтой бесплатно. При доставке курьером до двери стоимость доставки 7 рублей.</li>
@@ -125,7 +130,7 @@
                 </ol>
             </div>
             <div class="delivery__item">
-               <h3 class="delivery__item-text"> Срок доставки: </h3> 
+               <h3 class="delivery__item-text title_fz26"> Срок доставки: </h3> 
                 <div class="delivery__item-descr title_fz22">
                     <ul>
                         <li>по Беларуси до 3-х дней;</li>
@@ -143,17 +148,13 @@
     <footer class="footer">
     <div class="container">
         <div class="footer__wrapper">
-            <!-- <div class="footer__icon facebook"><a href="#"><span class="icon-facebook"></span></a></span></div>
-            <div class="footer__icon instagramm"><a href="#"><span class="icon-instagram"></span></a></div>
-            <div class="footer__icon telegram"><a href="#"><span class="icon-whatsapp"></span></a></div>
-            <div class="footer__icon twitter"><a href="#"><span class="icon-twitter"></span></a></div>
-            <div class="footer__icon vk"><a href="#"><span class="icon-vk"></span></a></div> -->
             <div class="footer__item">
                 <div class="footer__item-text">Навигация</div>
                 <ul>
                     <li class="footer__item-link"><a href="#" class="effect-underline">О нас</a></li>
                     <li class="footer__item-link"><a href="#" class="effect-underline">Изделия</a></li>
                     <li class="footer__item-link"><a href="#" class="effect-underline">Мастер-классы</a></li>
+                    <li class="footer__item-link"><a href="#" class="effect-underline">Отзывы</a></li>
                     <li class="footer__item-link"><a href="#" class="effect-underline">Доставка</a></li>
                 </ul>
             </div>
@@ -185,6 +186,7 @@
         </div>
     </div>
 </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 </html>
