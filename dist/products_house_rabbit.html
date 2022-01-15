@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220115132009">
     <title>HURMA CROCHET</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
             <nav class="header__menu">
                 <ul class="header__list ">
                     <li>
-                        <a class="header__link" href="#">О нас</a>
+                        <a class="header__link" href="about.html">О нас</a>
                     </li>
                     <li>
                         <a class="header__link" class="" href="index.html#products">Изделия</a>
@@ -33,19 +33,19 @@
                             <li class="submenu-item"><a href="products_house_cat.html#products_house_cat">Круглый домик "Котик"</a></li>
                             <li class="submenu-item"><a href="products_house_rabbit.html#products_house_rabbit">Круглый домик "Зайчик"</a></li>
                             <li class="submenu-item"><a href="products_house_vigvam.html#products_house_vigvam">Домик "Вигвам"</a></li>
-                            <li class="submenu-item"><a href="index_products_mat.html#products_mat">Коврики</a></li>
+                            <li class="submenu-item"><a href="index_products_mat.html#products_mat">Коврики-когтеточки</a></li>
                             <li class="submenu-item"><a href="index_products_lie.html#products_lie">Лежанки</a></li>
                         </ul>
                     </li>
                     <li>
                         <a class="header__link" href="index.html#master">Мастер-классы</a>
                         <ul class="submenu title_fz20">
-                            <li class="submenu-item"><a href="#">Коврик "Косточка"</a></li>
-                            <li class="submenu-item"><a href="#">Коврик "Котик"</a></li>
+                            <li class="submenu-item"><a href="master_mat_bone.html">Коврик "Косточка"</a></li>
+                            <li class="submenu-item"><a href="master_mat_cat.html">Коврик "Котик"</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a class="header__link" href="#">Отзывы</a>
+                        <a class="header__link" href="feedback.html">Отзывы</a>
                     </li>
                     <li>
                         <a class="header__link" href="index.html#delivery">Доставка</a>
@@ -63,28 +63,38 @@
         <div class="good__item">
             <div class="slider">
                 <div class="slider__item">
-                    <img src="img/products/products_house/products__house-rabbit/1.jpeg" alt="rabbit">
+                    <picture><source srcset="img/products/products_house/products__house-rabbit/1.webp"type="image/webp"><img src="img/products/products_house/products__house-rabbit/1.jpeg" alt="rabbit"></picture>
                 </div>
                 <div class="slider__item">
-                    <img src="img/products/products_house/products__house-rabbit/2.jpg" alt="rabbit">
+                    <picture><source srcset="img/products/products_house/products__house-rabbit/2.webp"type="image/webp"><img src="img/products/products_house/products__house-rabbit/2.jpg" alt="rabbit"></picture>
                 </div>
                 <div class="slider__item">
-                    <img src="img/products/products_house/products__house-rabbit/3.jpg" alt="rabbit">
+                    <picture><source srcset="img/products/products_house/products__house-rabbit/3.webp"type="image/webp"><img src="img/products/products_house/products__house-rabbit/3.jpg" alt="rabbit"></picture>
                 </div>
                 <div class="slider__item">
-                    <img src="img/products/products_house/products__house-rabbit/4.jpg" alt="rabbit">
+                    <picture><source srcset="img/products/products_house/products__house-rabbit/4.webp"type="image/webp"><img src="img/products/products_house/products__house-rabbit/4.jpg" alt="rabbit"></picture>
                 </div>
             </div>
             <div class="good__wrapper">
                 <div class="good__name title_fz36">КРУГЛЫЙ ДОМИК &#171ЗАЙЧИК&#187</div>
                 <div class="good__price title_fz30">
-                    <span class="show" id="first">100</span> 
-                    <span class="hide" id="second">120</span> BYN</div>
+                    <span class="show" id="firstBYN">135</span> 
+                    <span class="hide" id="secondBYN">155</span> 
+                    <span class="hide" id="firstRUB">4000</span> 
+                    <span class="hide" id="secondRUB">4650</span> 
+                    <span class="hide" id="firstUAH">1500</span> 
+                    <span class="hide" id="secondUAH">1750</span> 
+                    <select id="select">
+                        <option>BYN</option>
+                        <option>₽</option>
+                        <option>UAH</option>
+                    </select> 
+                </div>
                 <div class="good__text title_fz22">Домик - идеальный подарок для кошки или собачки.</div>
                 <div class="good__size title_fz26">Размеры:</div>
                 <div class="good__size-wrap">
                     <div>
-                        <input type="radio" name="size" id="1" checked>
+                        <input type="radio" name="size" id="1" checked class="main">
                         <label for="1">40&times;40&times;40 см.</label>
                     </div>
 
@@ -159,34 +169,34 @@
             </div>
             <div class="good__content title_fz20 delivery">
                 <div class="title delivery__wrap">
-                    <div class="delivery__item">
-                        <h3 class="delivery__item-text">Срок изготовления заказа</h3>
-                        <div class="delivery__item-descr title_fz22">
-                            Все изделия мы выполняем вручную по индивидуальному заказу. На изготовление изделия после предоплаты необходимо 7-10 дней. Доставка в этот срок не входит, а рассчитывается для вас индивидуально. Подробнее про сроки и стоимость доставки вы можете прочитать ниже.
-                        </div>
-                    </div>
-                    <div class="delivery__item">
-                        <h3 class="delivery__item-text">Доставка</h3>
-                        <ol class="delivery__item-descr title_fz22">
-                            <li>Осуществляем доставку по городу Бресту самостоятельно или курьером. Также возможен самовывоз. Время оговаривается заранее.</li>
-                            <li>В другие города Беларуси отправляем Белпочтой и Европочтой бесплатно. При доставке курьером до двери стоимость доставки 7 рублей.</li>
-                            <li>В Россию отправляем посылки СДЭКом. Стоимость доставки зависит от региона и веса посылки, поэтому рассчитывается при оформлении заказа.</li>
-                            <li>Во все другие страны отправляем посылки Белпочтой. Стоимость доставки рассчитывается при оформлении заказа.</li>
-                        </ol>
-                    </div>
-                    <div class="delivery__item">
-                       <h3 class="delivery__item-text"> Срок доставки: </h3> 
-                        <div class="delivery__item-descr title_fz22">
-                            <ul>
-                                <li>по Беларуси до 3-х дней;</li>
-                                <li>в Россию 1-2 недели;</li>
-                                <li>в Украину около 2-х недель;</li>
-                                <li>около месяца в другие страны.</li>
-                            </ul>        
-                                Сроки доставки могут увеличиваться в праздничные дни. Перед праздниками лучше сделать заказ заранее, чтобы посылки успели приехать вовремя.
-                        </div>
-                    </div>
-                </div>
+    <div class="delivery__item">
+        <h3 class="delivery__item-text title_fz26">Срок изготовления заказа</h3>
+        <div class="delivery__item-descr title_fz22">
+            Все изделия мы выполняем вручную по индивидуальному заказу. На изготовление изделия после предоплаты необходимо 7-10 дней. Доставка в этот срок не входит, а рассчитывается для вас индивидуально. Подробнее про сроки и стоимость доставки вы можете прочитать ниже.
+        </div>
+    </div>
+    <div class="delivery__item">
+        <h3 class="delivery__item-text title_fz26">Доставка</h3>
+        <ol class="delivery__item-descr title_fz22">
+            <li>Осуществляем доставку по городу Бресту самостоятельно или курьером. Также возможен самовывоз. Время оговаривается заранее.</li>
+            <li>В другие города Беларуси отправляем Белпочтой и Европочтой бесплатно. При доставке курьером до двери стоимость доставки 7 рублей.</li>
+            <li>В Россию отправляем посылки СДЭКом. Стоимость доставки зависит от региона и веса посылки, поэтому рассчитывается при оформлении заказа.</li>
+            <li>Во все другие страны отправляем посылки Белпочтой. Стоимость доставки рассчитывается при оформлении заказа.</li>
+        </ol>
+    </div>
+    <div class="delivery__item">
+       <h3 class="delivery__item-text title_fz26"> Срок доставки: </h3> 
+        <div class="delivery__item-descr title_fz22">
+            <ul>
+                <li>по Беларуси до 3-х дней;</li>
+                <li>в Россию 1-2 недели;</li>
+                <li>в Украину около 2-х недель;</li>
+                <li>около месяца в другие страны.</li>
+            </ul>        
+                Сроки доставки могут увеличиваться в праздничные дни. Перед праздниками лучше сделать заказ заранее, чтобы посылки успели приехать вовремя.
+        </div>
+    </div>
+</div>
             </div>
         </div>
         
@@ -200,19 +210,29 @@
             <div class="footer__item">
                 <div class="footer__item-text">Навигация</div>
                 <ul>
-                    <li class="footer__item-link"><a href="#" class="effect-underline">О нас</a></li>
-                    <li class="footer__item-link"><a href="#" class="effect-underline">Изделия</a></li>
-                    <li class="footer__item-link"><a href="#" class="effect-underline">Мастер-классы</a></li>
-                    <li class="footer__item-link"><a href="#" class="effect-underline">Отзывы</a></li>
-                    <li class="footer__item-link"><a href="#" class="effect-underline">Доставка</a></li>
+                    <li class="footer__item-link">
+                        <a href="about.html" class="effect-underline">О нас</a>
+                    </li>
+                    <li class="footer__item-link">
+                        <a href="index.html#products" class="effect-underline">Изделия</a>
+                    </li>
+                    <li class="footer__item-link">
+                        <a href="index.html#master" class="effect-underline">Мастер-классы</a>
+                    </li>
+                    <li class="footer__item-link">
+                        <a href="feedback.html" class="effect-underline">Отзывы</a>
+                    </li>
+                    <li class="footer__item-link">
+                        <a href="index.html#delivery" class="effect-underline">Доставка</a>
+                    </li>
                 </ul>
             </div>
 
             <div class="footer__item">
                 <div class="footer__item-text">Контакты</div>
                 <ul>
-                    <li class="footer__item-link">E-mail<a href="#">hurmacrochet@gmail.com</a></li>
-                    <li class="footer__item-link">Telegram<a href="#">+999 99 999 99 99</a></li>
+                    <li class="footer__item-link">E-mail:<div>hurmacrochet@gmail.com</div></li>
+                    <li class="footer__item-link">Telegram:<div>+999 99 999 99 99</div></li>
                 </ul>
             </div>
 
@@ -220,13 +240,7 @@
                 <div class="footer__item-text">Присоединяйтесь к нам</div>
                 <ul>
                     <li class="footer__item-link">
-                        <a href="#">
-                            
-                        </a>
-                    </li>
-
-                    <li class="footer__item-link">
-                        <a href="#" class="footer__logo-link">
+                        <a href="https://www.instagram.com/hurma_crochet_/" class="footer__logo-link">
                             <span>HURMA</span> CR<img src="img/icon/social/instagram-brands.svg" alt="insta">CHET
                         </a>
                     </li>
@@ -235,8 +249,8 @@
         </div>
     </div>
 </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/app.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220115132009"></script>
+    <script src="js/slick.min.js?_v=20220115132009"></script>
+    <script src="js/app.min.js?_v=20220115132009"></script>
 </body>
 </html>
