@@ -41,7 +41,7 @@
     <meta name="msapplication-TileImage" content="img/icons/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220120160230">
 </head>
 <body>
     <aside class="sidepanel">
@@ -169,20 +169,242 @@
             </div>
 
             <div class="about__photo">
-                <img  src="img/main_photo.jpg" alt="photo">
+                <picture><source srcset="img/main_photo.webp"type="image/webp"><img  src="img/main_photo.jpg" alt="photo"></picture>
             </div>
         </div>
     </div>
 </section>
 
     
-    
+    <section id="skills" class="skills">
+    <div class="container">
+        <h2 class="main__title">Навыки</h2>
+        <div class="main__subtitle">Что я использую в работе</div>
+        <div class="divider"></div>
+
+        <div class="programm">
+            <div class="programm__item">
+                <div class="programm__item-icon">
+                    <img src="img/icons/skills/html5.svg" alt="html">
+                </div>
+                <div class="programm__item-name">HTML</div>
+                <div class="programm__item-descr">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>    
+            </div>
+
+            <div class="programm__item">
+                <div class="programm__item-icon">
+                    <img src="img/icons/skills/css3.svg" alt="css">
+                </div>
+                <div class="programm__item-name">CSS3</div>
+                <div class="programm__item-descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>    
+            </div>
+
+            <div class="programm__item">
+                <div class="programm__item-icon">
+                    <img src="img/icons/skills/js.svg" alt="js">
+                </div>
+                <div class="programm__item-name">Java Script</div>
+                <div class="programm__item-descr">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>    
+            </div>
+
+            <div class="programm__item">
+                <div class="programm__item-icon programm__item-icon_jquery">
+                    <img src="img/icons/skills/jquery.svg" alt="jquery">
+                </div>
+                <div class="programm__item-name ">jQuery</div>
+                <div class="programm__item-descr">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>    
+            </div>
+
+            <div class="programm__item">
+                <div class="programm__item-icon">
+                    <img src="img/icons/skills/react.svg" alt="react">
+                </div>
+                <div class="programm__item-name">React</div>
+                <div class="programm__item-descr">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</div>    
+            </div>
+
+            <div class="programm__item">
+                <div class="programm__item-icon">
+                    <img src="img/icons/skills/node.js.svg" alt="node">
+                </div>
+                <div class="programm__item-name">Node.js</div>
+                <div class="programm__item-descr">Эта платформа позволяет создавать бэкенд для вашего продукта - “мозги”, которые будут выполнять действия, которые пользователь не видит</div>    
+            </div>
+        </div>
+
+        <div class="skills__wrapper">
+            <div class="skills__item">
+                <div class="skills__text">
+                    <div >Создание сайтов</div>
+                    <div class=" skills__text-value">84%</div>
+                </div>
+                <div class="skills__line">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skills__item">
+                <div class="skills__text">
+                    <div>Креативность</div>
+                    <div class=" skills__text-value">88%</div>
+                </div>
+                <div class="skills__line">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skills__item">
+                <div class="skills__text">
+                    <div>Создание дизайна</div>
+                    <div class=" skills__text-value">81%</div>
+                </div>
+                <div class="skills__line">
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="skills__item">
+                <div class="skills__text">
+                    <div>Работа с данными</div>
+                    <div class=" skills__text-value">80%</div>
+                </div>
+                <div class="skills__line">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <section id="portfolio" class="portfolio">
+    <div class="container">
+        <h2 class=" main__title">Портфолио</h2>
+        <div class="main__subtitle">Мои работы</div>
+        <div class="divider"></div>
+
+        <div class="portfolio__wrapper">
+            <a href="#" class="portfolio__item">
+                <picture><source srcset="img/works/photo.webp"type="image/webp"><img src="img/works/photo.jpg" alt="plans"></picture>
+            </a>
+            <a href="#" class="portfolio__item">
+                <picture><source srcset="img/works/hurma.webp"type="image/webp"><img src="img/works/hurma.jpeg" alt="plans"></picture>
+            </a>
+            <a href="#" class="portfolio__item">
+                <picture><source srcset="img/works/rsshcoll.webp"type="image/webp"><img src="img/works/rsshcoll.jpg" alt="plans"></picture>
+            </a>
+            <a href="#" class="portfolio__item">
+                <picture><source srcset="img/works/plans.webp"type="image/webp"><img src="img/works/plans.jpg" alt="plans"></picture>
+            </a>
+        </div>
+    </div>
+</section>
+    <section id="price" class="price">
+    <div class="container">
+        <h2 class="main__title">Прайс-лист</h2>
+        <div class="divider"></div>
+
+        <div class="price__wrapper">
+            <div class="price__item">
+                <div class="price__item-text">Landing-page</div>
+                <div class="price__item-amount">от 270 BYN</div>
+                <div class="price__item-descr">Одностраничный сайт для презентации услуг/товаров/...</div>
+            </div>
+            <!-- <div class="price__item">
+                <div class="price__item-text">Web-приложение</div>
+                <div class="price__item-amount">от 28000 руб.</div>
+                <div class="price__item-descr">Приложение внутри браузера для лучшего комфорта</div>
+            </div> -->
+            <div class="price__item">
+                <div class="price__item-text">Корпоративный сайт</div>
+                <div class="price__item-amount">от 750 BYN</div>
+                <div class="price__item-descr">Сайт для вашего бизнеса или компании</div>
+            </div>
+            <!-- <div class="price__item">
+                <div class="price__item-text">Android/IOS Приложение</div>
+                <div class="price__item-amount">от 25000 руб.</div>
+                <div class="price__item-descr">Приложение для смартфона любой ОС</div>
+            </div> -->
+            <div class="price__item">
+                <div class="price__item-text">Интернет-магазин</div>
+                <div class="price__item-amount">от 1000 BYN</div>
+                <div class="price__item-descr">Инструмент для ваших продаж в сети</div>
+            </div>
+            <div class="price__item">
+                <div class="price__item-text">Дизайн</div>
+                <div class="price__item-amount">Индивидуально</div>
+                <div class="price__item-descr">Создам дизайн для вашего сайта/приложения...</div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section id="contacts" class="contacts">
+    <div class="container">
+        <div class="contacts__wrapper">
+            <div class="contacts__photo">
+                <picture><source srcset="img/main_photo.webp"type="image/webp"><img  src="img/main_photo.jpg" alt="photo"></picture>
+            </div>
+
+            <div class="contacts__descr">
+                <h2 class="contacts__title">Контакты</h2>
+                <div class=" contacts__subtitle">Свяжитесь со мной</div>
+                <div class="divider"></div>
+                <div class="contacts__text">
+                    Любым удобным для вас способом:
+                </div>
+                <div class="contacts__social">
+                    <a href="#">
+                        <svg class="icon icon_rotate">
+                            <use xlink:href="img/icons/social.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon">
+                            <use xlink:href="img/icons/social.svg#telegram"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="icon icon_rotate">
+                            <use xlink:href="img/icons/social.svg#github"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="contacts__text">
+                    Или оставьте ваши данные и я сам вам напишу:
+                </div>
+
+                <form  action="#" class="contacts__form">
+                    <div class="contacts__input">
+                        <input name="name" id="name" type="text">
+                        <label for="name">Ваше имя</label>
+                    </div>
+                    <div class="contacts__input">
+                        <input  name="email" id="email" type="email">
+                        <label for="email">Ваша почта</label>
+                    </div>
+
+                    <div class="contacts__textarea">
+                        <textarea  name="text" id="text" ></textarea>
+                        <label for="text">Ваше сообщение</label>
+                    </div>
+                    <div class="contacts__triggers">
+                        <button class="btn contacts__btn">Отправить сообщение</button>
+                        <div class="contacts__policy">
+                            <input id="agree" name="agree" type="checkbox">
+                            <label for="agree"></label>
+                            <span>Я согласен(а) с <a href="policy.html">политикой конфиденциальности</a></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
    
     <a href="#up" id="pageup" class="pageup">
         <img src="img/icons/icon-up.svg" alt="up">
     </a>
-    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="js/app.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js?_v=20220120160230"></script>
+    <script src="js/app.min.js?_v=20220120160230" ></script>
     
 </body>
 </html>
