@@ -34,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {
 .header:after {
     content: "";
     display: block;
-    width: 1200px;
+    max-width: 1200px;
     height: 5px;
     background:#b9a9ca;
     
@@ -125,6 +125,7 @@ h1,h2,h3,h4,h5,h6 {
     max-width: 600px;
     padding: 50px 100px; 
     transition: all 0.2s linear;
+    margin: 0 auto;
 }
 
 .section:hover {
@@ -209,4 +210,36 @@ h1,h2,h3,h4,h5,h6 {
 
 .footer_h{
     padding: 0 10px;
+}
+
+@media (max-width: 1250px) {
+    .section {
+        max-width: 500px;
+        padding: 50px 50px
+    }
+}
+
+@media (max-width: 710px) {
+    .header_inner {
+        flex-direction: column;
+    }
+    .header:after {
+        margin: -90px auto 5px;
+    }
+    .section {
+        padding: 50px 50px
+    }
+    .footer_text {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 490px) {
+   
+    .header:after {
+        margin: -90px auto 5px;
+    }
+    .section {
+        padding: 40px 20px
+    }
 }
