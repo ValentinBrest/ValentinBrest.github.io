@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory-game</title>
+</head>
+<body >
+    <header class="header">
+        <div class="container">
+            <div class="header__title">Memory-game</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="init">
+            <div class="container">
+                <div class="init__wrapper">
+                    <div class="score">
+                        <span class="init__title">Score:</span>
+                        <span class="total">0</span>
+                    </div>
+    
+                    <div class="init__name">
+                        <span class="init__title">Name:</span>
+                        <input class="name" placeholder="Valentin">
+                    </div>
+
+                    <div class="init__img" title="restart">
+                        <svg aria-hidden="true" focusable="false"  role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path fill="black" d="M256.455 8c66.269.119 126.437 26.233 170.859 68.685l35.715-35.715C478.149 25.851 504 36.559 504 57.941V192c0 13.255-10.745 24-24 24H345.941c-21.382 0-32.09-25.851-16.971-40.971l41.75-41.75c-30.864-28.899-70.801-44.907-113.23-45.273-92.398-.798-170.283 73.977-169.484 169.442C88.764 348.009 162.184 424 256 424c41.127 0 79.997-14.678 110.629-41.556 4.743-4.161 11.906-3.908 16.368.553l39.662 39.662c4.872 4.872 4.631 12.815-.482 17.433C378.202 479.813 319.926 504 256 504 119.034 504 8.001 392.967 8 256.002 7.999 119.193 119.646 7.755 256.455 8z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="game">
+            <div class="container">
+                <div class="game__wrapper">
+                    <div class="game__card" data-framework="angular">
+                        <img src="img/front/angular.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="angular">
+                        <img src="img/front/angular.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="aurellia">
+                        <img src="img/front/aurelia.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="aurellia">
+                        <img src="img/front/aurelia.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="backbone">
+                        <img src="img/front/backbone.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="backbone">
+                        <img src="img/front/backbone.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="ember">
+                        <img src="img/front/ember.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="ember">
+                        <img src="img/front/ember.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="react">
+                        <img src="img/front/react.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="react">
+                        <img src="img/front/react.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="vue">
+                        <img src="img/front/vue.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="vue">
+                        <img src="img/front/vue.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="php">
+                        <img src="img/front/php.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="php">
+                        <img src="img/front/php.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="html">
+                        <img src="img/front/html.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                    <div class="game__card" data-framework="html">
+                        <img src="img/front/html.svg"  alt="front" class="front-face">
+                        <img src="img/js-badge.svg" alt="back" class="back-face">
+                    </div>
+                </div>
+                <section class="modal__window">
+                    <div class="init__name modal__name">
+                        <span class="init__title">Your name:</span>
+                        <input type="text" value="Valentin" placeholder="Valentin" class="input">
+                    </div>
+                    <div class="score modal__score">
+                        <span class="init__title">Score:</span>
+                        <span class="total">0</span>
+                    </div>
+                    <button class="button">Start</button>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <section class="overlay"></section>
+
+    
+
+    <section class="table">
+        <div class="container">
+            <div class="table__title">Results</div>
+            <div class="table__wrapper">
+                <div class="table__header">
+                    <div class="table__item">№</div>
+                    <div class="table__item">Name</div>
+                    <div class="table__item">Score</div>
+                    <div class="table__item">Date 
+                        <svg aria-hidden="true" focusable="false"  class="clean" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="white" d="M32 464a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128H32zm272-256a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zm-96 0a16 16 0 0 1 32 0v224a16 16 0 0 1-32 0zM432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16z"></path></svg>
+                    </div>
+                </div>
+                <div class="table__str">
+                    <div class="table__item">1</div>
+                    <div class="table__item" data-name="name"></div>
+                    <div class="table__item" data-total="total"></div>
+                    <div class="table__item" data-time="time"></div>
+                </div>
+                <div class="table__str table__str-bg">
+                    <div class="table__item">2</div>
+                    <div class="table__item" data-name="name"></div>
+                    <div class="table__item" data-total="total"></div>
+                    <div class="table__item" data-time="time"></div>
+                </div>
+                <div class="table__str">
+                    <div class="table__item">3</div>
+                    <div class="table__item" data-name="name"></div>
+                    <div class="table__item" data-total="total"></div>
+                    <div class="table__item" data-time="time"></div>
+                </div>
+                <div class="table__str table__str-bg">
+                    <div class="table__item">4</div>
+                    <div class="table__item" data-name="name"></div>
+                    <div class="table__item" data-total="total"></div>
+                    <div class="table__item" data-time="time"></div>
+                </div>
+                <div class="table__str">
+                    <div class="table__item">5</div>
+                    <div class="table__item" data-name="name"></div>
+                    <div class="table__item" data-total="total"></div>
+                    <div class="table__item" data-time="time"></div>
+                </div>
+                <div class="table__str table__str-bg">
+                    <div class="table__item">6</div>
+                    <div class="table__item" data-name="name"></div>
+                    <div class="table__item" data-total="total"></div>
+                    <div class="table__item" data-time="time"></div>
+                </div>
+                <div class="table__str">
+                    <div class="table__item">7</div>
+                    <div class="table__item" data-name="name"></div>
+                    <div class="table__item" data-total="total"></div>
+                    <div class="table__item" data-time="time"></div>
+                </div>
+                <div class="table__str table__str-bg">
+                    <div class="table__item">8</div>
+                    <div class="table__item" data-name="name"></div>
+                    <div class="table__item" data-total="total"></div>
+                    <div class="table__item" data-time="time"></div>
+                </div>
+                <div class="table__str">
+                    <div class="table__item">9</div>
+                    <div class="table__item" data-name="name"></div>
+                    <div class="table__item" data-total="total"></div>
+                    <div class="table__item" data-time="time"></div>
+                </div>
+                <div class="table__str table__str-bg">
+                    <div class="table__item">10</div>
+                    <div class="table__item" data-name="name"></div>
+                    <div class="table__item" data-total="total"></div>
+                    <div class="table__item" data-time="time"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__box">
+                    <div>©</div>
+                    <div>2022</div>
+                    <a href="https://github.com/ValentinBrest">github</a>
+                </div>
+
+                <a href="https://rs.school/js-stage0/" class="footer__rss">Rolling Scopes School</a>
+
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
