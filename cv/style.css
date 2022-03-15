@@ -97,6 +97,9 @@ main {
 .main__lang-circle .circle.active {
     background-color: aliceblue;
 }
+.main__skills {
+    padding-bottom: 30px;
+}
 
 .main__skills-box {
     padding-left: 20px;
@@ -213,18 +216,34 @@ main {
 .main__right-project {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-left: 15px;
 }
 
 .main__right-project a {
     color:black;
     text-decoration: none;
     transition: all .3s;
+    position: relative;
+}
+
+.main__right-project a:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #2d8b9b;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%);
 }
 
 .main__right-project a:hover {
     text-decoration: underline;
 }
-
+.main__right-about {
+    width: 100%;
+}
 .main__right-hobby {
     display: flex;
     justify-content: space-around;
@@ -240,25 +259,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 
-@media (max-width: 1250px) {
-    .section {
-        max-width: 500px;
-        padding: 50px 50px
+@media (max-width: 900px) {
+    .main__right-project {
+        grid-template-columns: 1fr ;
     }
 }
 
-@media (max-width: 710px) {
-    .header_inner {
-        flex-direction: column;
-    }
-    .header:after {
-        margin: -90px auto 5px;
-    }
-    .section {
-        padding: 50px 50px
-    }
-    .footer_text {
-        flex-wrap: wrap;
+@media (max-width: 750px) {
+    main {
+        display: block;
     }
 }
 
