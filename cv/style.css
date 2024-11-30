@@ -30,9 +30,17 @@ main {
     margin: 25px 18px 34px 40px;
 }
 
+.wrap_photo {
+    width: 100%;
+    height: 450px;
+}
+
 .main__photo {
     width:100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
+    object-position: top;
 
 }
 
@@ -106,7 +114,7 @@ main {
 }
 
 .main__skills-box li {
-    padding-top: 15px;
+    padding-top: 5px;
     padding-bottom: 5px;
 }
 
@@ -205,7 +213,7 @@ main {
 }
 
 .main__right-descr {
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .main__right-descr span {
